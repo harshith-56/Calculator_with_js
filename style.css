@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+  overflow-x: hidden;
+
+  /* Does NOT work on Safari */
+  /* scroll-behavior: smooth; */
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  /* line-height: 1; */
+  /* font-weight: 400;
+  color: #555; */
+  background-color: rgb(150, 187, 180, 0.9);
+
+  /* Only works if there is nothing absolutely positioned in relation to body */
+  overflow-x: hidden;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto 0;
+}
+.calculator {
+  /* margin-top: 9rem; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 0;
+  width: 40rem;
+}
+.parentElement button {
+  padding: 5rem;
+  display: inline;
+  border: hidden;
+  width: 0rem;
+}
+button {
+  text-align: center;
+  color: white;
+  background-color: #212529;
+}
+.parentElement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn:hover {
+  cursor: pointer;
+}
+.btn {
+  font-size: 2.2rem;
+}
+.span-row {
+  grid-column: span 4;
+}
+input {
+  background-color: #212529;
+  color: #e8590c;
+  font-size: 3rem;
+  width: 40rem;
+  height: 11rem;
+}
+.symbols .btn {
+  color: #e8590c;
+}
